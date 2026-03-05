@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -12,14 +13,14 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-<meta charset="utf-8">
-<meta name="description" content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO">
-<meta name="keywords" content="Neuro-Symbolic Policies">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO">
+  <meta name="keywords" content="Neuro-Symbolic Policies">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -28,7 +29,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
-</script>
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -43,299 +44,418 @@
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
+
 <body>
 
   <link rel="icon" href="./favicon.ico?">
-  
-  <meta lmperty="og:site_name" content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO" />
+
+  <meta lmperty="og:site_name"
+    content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO" />
   <meta lmperty="og:type" content="video.other" />
-  <meta lmperty="og:title" content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO" />
-  <meta lmperty="og:url" content="https://collab.me.vt.edu/memo"/>
-  <meta lmperty="og:image" content=""/>
-  <meta lmperty="og:image:secure" content=""/>
-  <meta lmperty="og:video" content=""/>
-  <meta lmperty="og:video:secure" content=""/>
+  <meta lmperty="og:title"
+    content="From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO" />
+  <meta lmperty="og:url" content="https://collab.me.vt.edu/memo" />
+  <meta lmperty="og:image" content="" />
+  <meta lmperty="og:image:secure" content="" />
+  <meta lmperty="og:video" content="" />
+  <meta lmperty="og:video:secure" content="" />
 
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title publication-title" style="font-size: 2.8rem;">
-            From Local Corrections to Generalized Skills: <br>
-            Improving Neuro-Symbolic Policies with MEMO
-          </h1>
-          
-          <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block"></sup>Anonymous</span> -->
-              <style>
-              .author-block a {color: rgb(255, 153, 0) !important; text-decoration: none;font-weight: 500;}
-              .author-block a:hover {color: rgb(255, 120, 0) !important; text-decoration: underline;}
-              .author-block {
-                white-space: nowrap; /* prevent breaking mid-name */
-              }
-
-              .author-block a,
-              .author-block span {
-                white-space: nowrap; /* each name stays together */
-              }
-
-              .author-block br {
-                display: none; /* ensure <br> doesn’t interfere */
-              }
-
-              .author-block .comma::after {
-                content: ", ";
-                white-space: normal; /* allow break after comma */
-              }
-              </style>
-            <span class="author-block"></sup>
-              <a href="https://github.com/benjaminchristie" target="_blank">Benjamin A. Christie</a><span class="comma"></span>
-              <a href="https://yinlongdai.github.io/" target="_blank">Yinlong Dai</a><span class="comma"></span>
-              <a href="https://scholar.google.com/citations?user=0jGWGdsAAAAJ" target="_blank">Mohammad Bararjanianbahnamiri</a><span class="comma"></span>
-              <a href="https://simonstepputtis.com/" target="_blank">Simon Stepputtis</a><span class="comma"></span>
-              <a href="https://dylanlosey.com/" target="_blank">Dylan P. Losey</a>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Virginia Tech</span>
-            <br>
-            <span class="brmod">Under Review</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="./static/resources/memo.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/TODO"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/TODO"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/VT-Collab/memo/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+            <h1 class="title publication-title" style="font-size: 2.8rem;">
+              From Local Corrections to Generalized Skills: <br>
+              Improving Neuro-Symbolic Policies with MEMO
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"></sup>Anonymous</span> -->
+              <style>
+                .author-block a {
+                  color: rgb(255, 153, 0) !important;
+                  text-decoration: none;
+                  font-weight: 500;
+                }
+
+                .author-block a:hover {
+                  color: rgb(255, 120, 0) !important;
+                  text-decoration: underline;
+                }
+
+                .author-block {
+                  white-space: nowrap;
+                  /* prevent breaking mid-name */
+                }
+
+                .author-block a,
+                .author-block span {
+                  white-space: nowrap;
+                  /* each name stays together */
+                }
+
+                .author-block br {
+                  display: none;
+                  /* ensure <br> doesn’t interfere */
+                }
+
+                .author-block .comma::after {
+                  content: ", ";
+                  white-space: normal;
+                  /* allow break after comma */
+                }
+              </style>
+              <span class="author-block"></sup>
+                <a href="https://github.com/benjaminchristie" target="_blank">Benjamin A. Christie</a><span
+                  class="comma"></span>
+                <a href="https://yinlongdai.github.io/" target="_blank">Yinlong Dai</a><span class="comma"></span>
+                <a href="https://scholar.google.com/citations?user=0jGWGdsAAAAJ" target="_blank">Mohammad
+                  Bararjanianbahnamiri</a><span class="comma"></span>
+                <a href="https://simonstepputtis.com/" target="_blank">Simon Stepputtis</a><span class="comma"></span>
+                <a href="https://dylanlosey.com/" target="_blank">Dylan P. Losey</a>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Virginia Tech</span>
+              <br>
+              <span class="brmod">Under Review</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./static/resources/memo.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/TODO" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/TODO" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/VT-Collab/memo/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <div class="content">
-            <h2 class="subtitle has-text-centered is-size-4">
-              <strong><i>By aggregating natural language corrections from multiple users across multiple tasks into a skillbook, we can create and refine a continuously evolving set of generalized skills, leading to improvements beyond the corrected tasks.</i></strong>
-            </h2>
-            <!-- <video autoplay muted loop width="1080">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="content">
+              <h2 class="subtitle has-text-centered is-size-4">
+                <strong><i>By aggregating natural language corrections from multiple users across multiple tasks into a
+                    skillbook, we can create and refine a continuously evolving set of generalized skills, leading to
+                    improvements beyond the corrected tasks.</i></strong>
+              </h2>
+              <!-- <video autoplay muted loop width="1080">
               Update video
               <source src="./static/resources/Unseen_scoop.mp4" type="video/mp4">
             </video> -->
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <!-- Abstract. -->
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Abstract</h2>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <!-- Abstract. -->
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>Recent works use a neuro-symbolic framework for
+                general manipulation policies. The advantage of this framework
+                is that — by applying off-the-shelf vision and language models
+                — the robot can break complex tasks down into semantic
+                subtasks. However, the fundamental bottleneck is that the
+                robot needs skills to ground these subtasks into embodied
+                motions. Skills can take many forms (e.g., trajectory snippets,
+                motion primitives, coded functions), but regardless of their
+                form skills act as a constraint. The high-level policy can only
+                ground its language reasoning through the available skills; if
+                the robot cannot generate the right skill for the current task,
+                its policy will fail. We propose to address this limitation —
+                and dynamically expand the robot’s skills — by leveraging
+                user feedback. When a robot fails, humans can intuitively
+                explain what went wrong (e.g., “no, go higher”). While a simple
+                approach is to recall this exact text the next time the robot
+                faces a similar situation, we hypothesize that by collecting,
+                clustering, and re-phrasing natural language corrections across
+                multiple users and tasks, we can synthesize more general text
+                guidance and coded skill templates. Applying this hypothesis
+                we develop <b style="color:#FF9900;">Memory Enhanced Manipulation (MEMO)</b>. MEMO
+                builds and maintains a retrieval-augmented skillbook gathered
+                from human feedback and task successes. At run time, MEMO
+                retrieves relevant text and code from this skillbook, enabling
+                the robot’s policy to generate new skills while reasoning over
+                multi-task human feedback. Our experiments demonstrate that
+                using MEMO to aggregate local feedback into general skill
+                templates enables generalization to novel tasks where existing
+                baselines fall short.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-max-desktop">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <!-- Get embed YouTube video link. -->
+              <iframe src="https://www.youtube.com/embed/todo" title="MEMO Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="section">
+    <div class="columns is-centered">
+      <div class="container is-max-desktop">
+        <h2 class="title is-2" style="text-align: center;">Overview</h2>
+        <tr>
+          <td>
+            <br>
+            <div class="columns is-centered has-text-centered">
+              <img src="./static/resources/method.png" style="width: 100%;"></img>
+            </div>
+          </td>
+        </tr>
+        <br>
+        <br>
+        <div class="is-vcentered interpolation-panel">
           <div class="content has-text-justified">
-            <p>Recent works use a neuro-symbolic framework for
-general manipulation policies. The advantage of this framework
-is that — by applying off-the-shelf vision and language models
-— the robot can break complex tasks down into semantic
-subtasks. However, the fundamental bottleneck is that the
-robot needs skills to ground these subtasks into embodied
-motions. Skills can take many forms (e.g., trajectory snippets,
-motion primitives, coded functions), but regardless of their
-form skills act as a constraint. The high-level policy can only
-ground its language reasoning through the available skills; if
-the robot cannot generate the right skill for the current task,
-its policy will fail. We propose to address this limitation —
-and dynamically expand the robot’s skills — by leveraging
-user feedback. When a robot fails, humans can intuitively
-explain what went wrong (e.g., “no, go higher”). While a simple
-approach is to recall this exact text the next time the robot
-faces a similar situation, we hypothesize that by collecting,
-clustering, and re-phrasing natural language corrections across
-multiple users and tasks, we can synthesize more general text
-guidance and coded skill templates. Applying this hypothesis
-we develop <b style="color:#FF9900;">Memory Enhanced Manipulation (MEMO)</b>. MEMO
-builds and maintains a retrieval-augmented skillbook gathered
-from human feedback and task successes. At run time, MEMO
-retrieves relevant text and code from this skillbook, enabling
-the robot’s policy to generate new skills while reasoning over
-multi-task human feedback. Our experiments demonstrate that
-using MEMO to aggregate local feedback into general skill
-templates enables generalization to novel tasks where existing
-baselines fall short.</p>
+            <p style="font-size: 18px">
+              A neuro-symbolic policy using <b style="color:#FF9900;">MEMO</b> to accomplish a task. First, the policy
+              receives a general task description "Cook the food".
+              The policy uses <b style="color:#FF9900;">MEMO</b> to retrieve past experiences, feedback, and function
+              primitives for "opening an oven".
+              The policy uses this memory to generate code, which it executes open-loop. If the task was successful, <b
+                style="color:#FF9900;">MEMO</b> saves the code as a function template "<span
+                style="font-family: monospace;">open_oven()</span>".
+              If the user interrupts with feedback, <b style="color:#FF9900;">MEMO</b> stores this feedback as a new
+              entry in the skillbook $S$.
+              After the robot has finished operating, the skillbook is then <span
+                style="font-style: italic;">clustered</span> offline to remove redundant and conflicting entries.
+            </p>
           </div>
         </div>
       </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-max-desktop">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <!-- Get embed YouTube video link. -->
-          <iframe src="https://www.youtube.com/embed/todo" title="MEMO Video"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-          </iframe>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="columns is-centered">
+
+
+  <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-2" style="text-align: center;">Overview</h2>
-      <tr>
-        <td>
-          <br>
-          <div class="columns is-centered has-text-centered">
-            <img src="./static/resources/method.png" style="width: 100%;"></img>
+      <h2 class="title is-2" style="text-align: center;">Experiments</h2>
+      <!-- <img src="static/resources/all_exp_grouped.png" alt="Description of the image"> -->
+      <div class="experiment-row" data-scroll-row>
+        <h3 class="title is-4 experiment-subheader">Simulated Tasks</h3>
+        <p class="experiment-row-caption">We collect 224 human responses across 20 tasks in simulation.</p>
+        <div class="video-scroll-container">
+          <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
+          <div class="video-scroll">
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/clean_up_the_table.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Clean up the table.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/cook_the_food.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Cook the food.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/open_fridge.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Open the fridge.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/pick_the_left_can.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Pick the left-most can.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/put_the_banana_on_the_plate.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Put the banana on the plate.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/put_the_food_in_the_microwave.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Put the food in the microwave.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/put_the_cube_away.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Put the cube away.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/set_the_table.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Set the table.</p>
+            </div>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/heat_the_food.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Heat the food.</p>
+            </div>
           </div>
-        </td>
-      </tr>
-      <br>
-      <br>
-      <div class="is-vcentered interpolation-panel">
-        <div class="content has-text-justified">
-<p style="font-size: 18px">
-  A neuro-symbolic policy using <b style="color:#FF9900;">MEMO</b> to accomplish a task. First, the policy receives a general task description "Cook the food". 
-  The policy uses <b style="color:#FF9900;">MEMO</b> to retrieve past experiences, feedback, and function primitives for "opening an oven". 
-  The policy uses this memory to generate code, which it executes open-loop. If the task was successful, <b style="color:#FF9900;">MEMO</b> saves the code as a function template "<span style="font-family: monospace;">open_oven()</span>".
-  If the user interrupts with feedback, <b style="color:#FF9900;">MEMO</b> stores this feedback as a new entry in the skillbook $S$.
-  After the robot has finished operating, the skillbook is then <span style="font-style: italic;">clustered</span> offline to remove redundant and conflicting entries.
-</p>
+          <button class="scroll-button right"><span class="scroll-icon">&#8250;</span></button>
         </div>
+        <div class="video-dots" aria-hidden="true"></div>
       </div>
-  </div>
-  </div>
-</section>
+      <div class="experiment-row" data-scroll-row>
+        <h3 class="title is-4 experiment-subheader">Zero-shot Task Transfer</h3>
+        <p class="experiment-row-caption">Policies that use MEMO transfer to unseen tasks <span
+            style="font-style: italic;">zero-shot</span>.</p>
+        <div class="video-scroll-container">
+          <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
 
+          <div class="video-scroll">
 
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/bottle.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Close the bottle.</p>
+            </div>
 
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/can.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Pour the can.</p>
+            </div>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-2" style="text-align: center;">Experiments</h2>
-    <!-- <div class="experiment-row" data-scroll-row>
-      <h3 class="title is-4 experiment-subheader">Spatial Reasoning</h3>
-      <p class="experiment-row-caption">Understanding spatial relations between objects in the environment.</p>
-      <div class="video-scroll-container">
-        <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
-        <div class="video-scroll">
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/place_rightmost_fruit_near_the_bottle.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Move the fruit which is on the right towards the bottle.</p>
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/apple.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Take the apple out of the bowl and place it on the table.</p>
+            </div>
+
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/oven.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Put the food in the oven.</p>
+            </div>
+
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/empty_cabinet.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Empty the cabinet.</p>
+            </div>
+
           </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/pick_up_chip_to_right_of_can.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick the chip bag which is to the right of the can.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/pick_chip_on_left.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick the chip bag on the left of the table.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/insert_bread.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Insert the bread into the toaster.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/move_can_to_center.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Move the can to the center of the table.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/put_apple_in_middle.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick the apple from the bowl and place it on the table.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/pick_right_can.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick the rightmost can.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/pick_bowl.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick up the bowl.</p>
-          </div>
-          <div class="video-card">
-            <video class="scroll-video" autoplay loop muted>
-              <source src="./static/resources/pick_middle_fruit.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">Pick the fruit in the middle.</p>
-          </div>
+          <button class="scroll-button right"><span class="scroll-icon">&#8250;</span></button>
         </div>
-        <button class="scroll-button right"><span class="scroll-icon">&#8250;</span></button>
+        <div class="video-dots" aria-hidden="true"></div>
       </div>
-      <div class="video-dots" aria-hidden="true"></div>
-    </div>
-    <div class="experiment-row" data-scroll-row>
-      <h3 class="title is-4 experiment-subheader">Obstacle Awareness</h3>
-      <p class="experiment-row-caption">Recognizing configurations the robot must avoid.</p>
-      <div class="video-scroll-container">
+      <div class="experiment-row" data-scroll-row>
+        <h3 class="title is-4 experiment-subheader">Real-world Rollouts</h3>
+        <p class="experiment-row-caption">Using the skillbook we construct in simulation, we can rollout a policy in the
+          real-world with minimal sim-to-real transfer overhead.</p>
+        <div class="video-scroll-container">
+          <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
+          
+          <div class="video-scroll">
+            
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/output_bottle.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Close the bottle.</p>
+            </div>
+            
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/output_can.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Pour the can.</p>
+            </div>
+            
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/output_apple.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Take the apple out of the bowl and place it on the table.</p>
+            </div>
+            
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/output_oven.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Put the food in the oven.</p>
+            </div>
+            
+            <div class="video-card">
+              <video class="scroll-video" autoplay loop muted>
+                <source src="./static/resources/output_cabinet.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Empty the cabinet.</p>
+            </div>
+            
+          </div>
+          <button class="scroll-button right"><span class="scroll-icon">&#8250;</span></button>
+        </div>
+        <div class="video-dots" aria-hidden="true"></div>
+      </div>
+        <!---<div class="video-scroll-container">
         <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
         <div class="video-scroll">
           <div class="video-card">
@@ -371,7 +491,7 @@ baselines fall short.</p>
       <div class="video-dots" aria-hidden="true"></div>
     </div>
     <div class="experiment-row" data-scroll-row> -->
-      <!-- <h3 class="title is-4 experiment-subheader">Semantic Understanding</h3>
+        <!-- <h3 class="title is-4 experiment-subheader">Semantic Understanding</h3>
       <p class="experiment-row-caption">Inferring intent from under-specified instructions.</p>
       <div class="video-scroll-container">
         <button class="scroll-button left"><span class="scroll-icon">&#8249;</span></button>
@@ -520,475 +640,625 @@ baselines fall short.</p>
         </div>
       </div> -->
 
+        <br><br>
+        <h2 class="title is-2" style="text-align: center;">Prompts</h2>
+
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">MEMO System Prompt</h3>
+          <pre
+            class="citation-block"><p>You are a high-level Robotics Planning Agent controlling a Franka Panda robot arm in a physics simulation.
+Your goal is to generate Python code to manipulate objects in a 3D scene to satisfy user commands.
+
+### OPERATIONAL MODES
+You operate in a loop with four distinct phases. Determine your phase based on the user's input.
+
+#### PHASE 1: Subtask Identification
+If the user provides a high-level task or a scene update, identify the next atomic subtask.
+- Output Format: ONLY the functional representation ACTION(target) or ACTION(target, destination).
+- Constraint: Do not output code or comments. JUST the atomic action string.
+
+#### PHASE 2: Code Generation
+If you have identified a subtask (e.g., PICK(sponge)), generate Python 3 code to execute it.
+- Safety First: The physical environment is unforgiving. Collisions will fail the task.
+- Output Format: 
+    1. Python Comments: Plan the grasp (Top/Side-Vertical/Side-Horizontal) and approach.
+    2. Raw Python Code: Use self.move_to_position, self.top_grasp, etc. (Do not use markdown ticks).
+- Position Reasoning: Reason about the object positions, orientations, and sizes using the data provided in the object table. Ensure that the robot does not collide with the objects as defined by the bounding boxes, orientation, and position. For example, consider the case of two bounding boxes: one for "drawer" and one for "drawer handle". Although your plan may not hit the drawer handle's bounding box, it may inadvertedly hit the drawer's bounding box. To be safe, ensure that when aligning your gripper, you are far from any bounding box until you are ready to grasp the object(s) in the scene.
+
+#### PHASE 3: Feedback & Memory Consolidation
+- Input: User feedback after a failed/interrupted action.
+- Requirement: Correlate feedback to the specific ACTION(object).
+- Output: ONLY a raw JSON object. NO backticks, NO "Reasoning" text, NO introductory prose.
+- Valid Keys: Must be "ACTION(object)" or "GENERAL".
+- Example Output:
+{
+  "OPEN(cabinet)": "Use side_align_vertical to pull the handle because the cabinet opens prismatically.",
+  "GENERAL": "Prismatic doors require side grasps to maintain leverage."
+}
+
+#### PHASE 4: Generalization (Success)
+If the user does not interrupt, the code you generated succeeded! You must generalize the recently executed code into a reusable template.
+- Input: The specific python code that just worked.
+- Goal: Replace hardcoded coordinates (e.g., `[0.5, 0.2, 0.0]`) with variables (e.g., `target_pos`).
+- Output: A single Python function named '&lt;SUBTASK_OBJECT_IN_LOWERCASE&gt;(target_pos, ...)` that performs the logic. Ensure that the function is properly commented so that if it used in the future, it can be changed to accommodate changes in the scene.
+- Constraint: Do NOT allow hardcoded numbers for positions. Keep the grasp orientation logic (vertical vs horizontal) if it was crucial to the success.
+
+### CRITICAL CONSTRAINTS
+- If the user provides "FEEDBACK", you are in PHASE 3.
+- Do NOT use markdown code blocks (```json).
+- Ensure that the feedback is not verbatim. You should relate it to the current environment state and task at hand using the conversation history, but do not use hardcoded values, like numerical positions. Paraphrase to ensure that the feedback is generally applicable across tasks and similar environments.
+
+### COORDINATE SYSTEM & GEOMETRY
+- Frame: Base-aligned, Right-Handed (+X Forward, +Y Left, +Z Up). Table at z=0.0.
+- Gripper: Max width 0.08m.
+
+### GRASP STRATEGY & API
+You control the robot via self.
+1. self.top_grasp(angle): Vertical approach. Best for blocks/cubes.
+2. self.side_align_vertical(angle): Grippers are aligned vertically, approach from side. Best for flat objects (plates) or horizontal handles. Note this function orients but does not close the gripper. So you can align the gripper first and then move to the object to grasp.
+3. self.side_align_horizontal(angle): Grippers are aligned horizontally, approach from side. Best for upright cylinders (bottles) or vertical handles. Note this function orients but does not close the gripper. So you can align the gripper first and then move to the object to grasp.
+4. self.move_to_position(xyz), self.open_gripper(), self.close_gripper().
+5. self.spin_gripper(theta), which rotates the gripper in place by theta radians. Note theta is a relative change in angle, not an absolute angle position. 
+6. self.task_completed(): Call when user goal is DONE().
+**Important:** You only have access to these methods in `self`. You do not have access to any other fields or methods in `self`.</p></pre>
+        </div>
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">MEMO User Prompt</h3>
+          <pre class="citation-block"><p>### Execution History
+Your previously executed python code:
+${FOLLOWUP.python_code_called_history}
+Produced the following:
+${FOLLOWUP.python_code_output_history}
+
+### Previous Subtasks
+You have accomplished the following subtasks:
+${FOLLOWUP.subtasks_list}
+
+### Current State
+**User Task:** "${FOLLOWUP.task}"
+
+**Robot State:**
+- EE Position: ${FOLLOWUP.position}
+- EE Angle: ${FOLLOWUP.angle}
+- Gripper: ${FOLLOWUP.open_or_closed}
+**Detected Objects:**
+${FOLLOWUP.objects_table}
+
+### Instruction
+The next thing you should do is ${FOLLOWUP.next_thing_to_do}.</p></pre>
+        </div>
 
 
-      <div class="citation-section">
-        <h3 class="title is-4 experiment-subheader citation-title">Citation</h3>
-        <pre class="citation-block"><code>@article{christie2026local,
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">MEMO Feedback Prompt</h3>
+          <pre class="citation-block"><p>You just attempted the action `{subtask}`. The user has intervened with the following feedback:
+
+"{feedback}"
+
+Please analyze this feedback according to PHASE 3 instructions.
+Output the JSON memory update.</p></pre>
+        </div>
+
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">MEMO Generalization Prompt</h3>
+          <pre class="citation-block"><p>The code for subtask `{subtask}` executed successfully.
+Please enter PHASE 4.
+Take the executed code below and convert it into a generalized Python function template.
+Replace specific object coordinates with parameters.
+
+EXECUTED CODE:
+```python
+{code_history}
+```</p></pre>
+        </div>
+
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">Pruning System Prompt</h3>
+          <pre class="citation-block"><p>You are a robotics memory pruning assistant. Your job is to condense a list of motion feedbacks into a shorter list while preserving ALL key motion features.
+
+Requirements:
+1. Input is a list of feedback strings about a single motion or action.
+2. Output list length must be less than or equal to the input length.
+3. Shorten each feedback whenever possible without losing any motion features, make sure you include all dos and don'ts mentioned in the feedback.
+4. NEVER omit any motion feature (i.e. if any intermediate waypoints are mentioned, if a specific trajectory shape is described); if multiple feedbacks are redundant, merge them.
+5. If a code template is provided, make sure your output feedbacks fully capture the motion the code implements.
+6. Provide position agnostic feedbacks. Do NOT include any specific coordinates in the feedbacks.
+7. Output ONLY a raw JSON object with a single key: "feedbacks".
+
+Output format:
+{
+  "feedbacks": [
+    "...",
+    "..."
+  ]
+}
+
+Notes:
+- Keep feedbacks actionable and motion-specific.
+- Avoid changing the meaning or adding new constraints.
+- Make sure the final output is always preferably shorter than the input.</p></pre>
+        </div>
+
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">Pruning User Prompt</h3>
+          <pre class="citation-block"><p>### Input Feedbacks
+${FOLLOWUP.feedback}
+
+### Optional Code Template
+${FOLLOWUP.template}
+
+Condense the feedbacks into a shorter or equal-length list and return JSON only.
+</p></pre>
+        </div>
+
+
+        <div class="citation-section">
+          <h3 class="title is-4 experiment-subheader citation-title">Citation</h3>
+          <pre class="citation-block"><code>@article{christie2026local,
     title={From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO},
     author={Christie, Benjamin A and Dai, Yinlong and Bararjanianbahnamiri, Mohammad and Stepputtis, Simon and Losey, Dylan P},
     journal={arXiv preprint arXiv:TODO},
     year={2026}
 }
 </code></pre>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-.video-scroll-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 12px 0 8px;
-}
-
-.experiment-row {
-  margin-top: 28px;
-}
-
-.experiment-subheader {
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-.experiment-row-caption {
-  text-align: left;
-  margin: -4px 0 14px;
-  color: #4a4a4a;
-  font-size: 0.98rem;
-}
-
-.experiment-row-caption a {
-  color: rgb(255, 153, 0);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.experiment-row-caption a:hover {
-  color: rgb(255, 120, 0);
-  text-decoration: underline;
-}
-
-.inline-row-caption {
-  margin-top: 18px;
-}
-
-.inline-video-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 10px;
-}
-
-.inline-video-card {
-  position: relative;
-}
-
-.inline-video {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
-}
-
-.inline-video-tag {
-  position: absolute;
-  bottom: 10px;
-  left: 12px;
-  font-size: 1.15rem;
-  font-weight: 600;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-}
-
-.inline-video-speed {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  color: #1a1a1a;
-  font-size: 0.85rem;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
-}
-
-.inline-video-caption {
-  text-align: center;
-  margin: 12px 0 0;
-  color: #4a4a4a;
-  font-size: 0.95rem;
-}
-
-.dropdown-video-section {
-  margin-top: 20px;
-}
-
-.dropdown-video-controls {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.dropdown-video-label {
-  font-weight: 600;
-  color: #2a2a2a;
-}
-
-.dropdown-video-select {
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background: #ffffff;
-  color: #1a1a1a;
-}
-
-.dropdown-media-split {
-  display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-  gap: 18px;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.dropdown-video,
-.dropdown-image {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
-}
-
-.citation-section {
-  margin-top: 24px;
-}
-
-.citation-title {
-  margin: 0 0 12px;
-}
-
-.citation-block {
-  margin: 0;
-  padding: 14px 16px;
-  border-radius: 12px;
-  background: #f5f4f1;
-  color: #1a1a1a;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  white-space: pre-wrap;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-@media (max-width: 768px) {
-  .dropdown-media-split {
-    grid-template-columns: 1fr;
-  }
-}
-
-.video-scroll {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  width: 100%;
-  gap: 24px;
-  padding: 0 72px;
-  scroll-snap-type: x mandatory;
-  align-items: flex-start;
-}
-
-.video-card {
-  flex: 0 0 auto;
-  width: 42vw;
-  max-width: 520px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  scroll-snap-align: center;
-}
-
-.scroll-video {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  opacity: 0.35;
-  transform: scale(0.92);
-  transition: opacity 180ms ease, transform 180ms ease;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-}
-
-.video-card.is-active .scroll-video {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.video-caption {
-  margin: 0;
-  font-size: 0.95rem;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 200ms ease, transform 200ms ease;
-  color: #3a3a3a;
-  min-height: 1.4em;
-}
-
-.video-card.is-active .video-caption {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.scroll-button {
-  background-color: #FF9900;
-  border: none;
-  color: white;
-  font-size: 2.2rem;
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 1;
-  line-height: 1;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.scroll-icon {
-  display: block;
-  line-height: 1;
-  transform: translateY(-1px);
-}
-
-.scroll-button.left {
-  left: 0;
-}
-
-.scroll-button.right {
-  right: 0;
-}
-
-.video-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 16px;
-}
-
-.video-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(255, 153, 0, 0.35);
-  transition: transform 180ms ease, background 180ms ease;
-}
-
-.video-dot.is-active {
-  background: #FF9900;
-  transform: scale(1.25);
-}
-</style>
-
-<script>
-  const safePlay = (video) => {
-    const playPromise = video.play();
-    if (playPromise && typeof playPromise.catch === 'function') {
-      playPromise.catch(() => {});
+  <style>
+    .video-scroll-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 12px 0 8px;
     }
-  };
 
-  const setupVideoRow = (row) => {
-    const videoScroll = row.querySelector('.video-scroll');
-    const videoCards = Array.from(row.querySelectorAll('.video-card'));
-    const videos = videoCards.map((card) => card.querySelector('.scroll-video'));
-    const dotsContainer = row.querySelector('.video-dots');
-    let activeIndex = -1;
+    .experiment-row {
+      margin-top: 28px;
+    }
 
-    const dots = videos.map(() => {
-      const dot = document.createElement('span');
-      dot.className = 'video-dot';
-      dotsContainer.appendChild(dot);
-      return dot;
-    });
+    .experiment-subheader {
+      text-align: left;
+      margin-bottom: 12px;
+    }
 
-    const updateActiveVideo = () => {
-      const center = videoScroll.scrollLeft + videoScroll.clientWidth / 2;
-      let closest = null;
-      let closestDistance = Infinity;
-      let nextIndex = -1;
+    .experiment-row-caption {
+      text-align: left;
+      margin: -4px 0 14px;
+      color: #4a4a4a;
+      font-size: 0.98rem;
+    }
 
-      videoCards.forEach((card, index) => {
-        const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-        const distance = Math.abs(center - cardCenter);
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closest = card;
-          nextIndex = index;
-        }
+    .experiment-row-caption a {
+      color: rgb(255, 153, 0);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .experiment-row-caption a:hover {
+      color: rgb(255, 120, 0);
+      text-decoration: underline;
+    }
+
+    .inline-row-caption {
+      margin-top: 18px;
+    }
+
+    .inline-video-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .inline-video-card {
+      position: relative;
+    }
+
+    .inline-video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .inline-video-tag {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+    .inline-video-speed {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      color: #1a1a1a;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    }
+
+    .inline-video-caption {
+      text-align: center;
+      margin: 12px 0 0;
+      color: #4a4a4a;
+      font-size: 0.95rem;
+    }
+
+    .dropdown-video-section {
+      margin-top: 20px;
+    }
+
+    .dropdown-video-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .dropdown-video-label {
+      font-weight: 600;
+      color: #2a2a2a;
+    }
+
+    .dropdown-video-select {
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.18);
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+
+    .dropdown-media-split {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 18px;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    .dropdown-video,
+    .dropdown-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .citation-section {
+      margin-top: 24px;
+    }
+
+    .citation-title {
+      margin: 0 0 12px;
+    }
+
+    .citation-block {
+      margin: 0;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #f5f4f1;
+      color: #1a1a1a;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .dropdown-media-split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .video-scroll {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      width: 100%;
+      gap: 24px;
+      padding: 0 72px;
+      scroll-snap-type: x mandatory;
+      align-items: flex-start;
+    }
+
+    .video-card {
+      flex: 0 0 auto;
+      width: 42vw;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      scroll-snap-align: center;
+    }
+
+    .scroll-video {
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      opacity: 0.35;
+      transform: scale(0.92);
+      transition: opacity 180ms ease, transform 180ms ease;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    .video-card.is-active .scroll-video {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .video-caption {
+      margin: 0;
+      font-size: 0.95rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 200ms ease, transform 200ms ease;
+      color: #3a3a3a;
+      min-height: 1.4em;
+    }
+
+    .video-card.is-active .video-caption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .scroll-button {
+      background-color: #FF9900;
+      border: none;
+      color: white;
+      font-size: 2.2rem;
+      cursor: pointer;
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      line-height: 1;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .scroll-icon {
+      display: block;
+      line-height: 1;
+      transform: translateY(-1px);
+    }
+
+    .scroll-button.left {
+      left: 0;
+    }
+
+    .scroll-button.right {
+      right: 0;
+    }
+
+    .video-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .video-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255, 153, 0, 0.35);
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .video-dot.is-active {
+      background: #FF9900;
+      transform: scale(1.25);
+    }
+  </style>
+
+  <script>
+    const safePlay = (video) => {
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(() => { });
+      }
+    };
+
+    const setupVideoRow = (row) => {
+      const videoScroll = row.querySelector('.video-scroll');
+      const videoCards = Array.from(row.querySelectorAll('.video-card'));
+      const videos = videoCards.map((card) => card.querySelector('.scroll-video'));
+      const dotsContainer = row.querySelector('.video-dots');
+      let activeIndex = -1;
+
+      const dots = videos.map(() => {
+        const dot = document.createElement('span');
+        dot.className = 'video-dot';
+        dotsContainer.appendChild(dot);
+        return dot;
       });
 
-      videoCards.forEach((card) => card.classList.remove('is-active'));
-      if (closest) {
-        closest.classList.add('is-active');
-      }
+      const updateActiveVideo = () => {
+        const center = videoScroll.scrollLeft + videoScroll.clientWidth / 2;
+        let closest = null;
+        let closestDistance = Infinity;
+        let nextIndex = -1;
 
-      dots.forEach((dot) => dot.classList.remove('is-active'));
-      if (nextIndex >= 0) {
-        dots[nextIndex].classList.add('is-active');
-      }
+        videoCards.forEach((card, index) => {
+          const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+          const distance = Math.abs(center - cardCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closest = card;
+            nextIndex = index;
+          }
+        });
 
-      if (nextIndex !== activeIndex && nextIndex >= 0) {
-        const activeVideo = videos[nextIndex];
-        const isVisible = activeVideo.dataset.isVisible !== 'false';
-        if (isVisible) {
-          activeVideo.currentTime = 0;
-          safePlay(activeVideo);
+        videoCards.forEach((card) => card.classList.remove('is-active'));
+        if (closest) {
+          closest.classList.add('is-active');
         }
-        activeIndex = nextIndex;
-      }
+
+        dots.forEach((dot) => dot.classList.remove('is-active'));
+        if (nextIndex >= 0) {
+          dots[nextIndex].classList.add('is-active');
+        }
+
+        if (nextIndex !== activeIndex && nextIndex >= 0) {
+          const activeVideo = videos[nextIndex];
+          const isVisible = activeVideo.dataset.isVisible !== 'false';
+          if (isVisible) {
+            activeVideo.currentTime = 0;
+            safePlay(activeVideo);
+          }
+          activeIndex = nextIndex;
+        }
+      };
+
+      const scrollToIndex = (index) => {
+        const target = videoCards[index];
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      };
+
+      row.querySelector('.scroll-button.left').addEventListener('click', () => {
+        const nextIndex = Math.max(activeIndex - 1, 0);
+        scrollToIndex(nextIndex);
+      });
+
+      row.querySelector('.scroll-button.right').addEventListener('click', () => {
+        const nextIndex = Math.min(activeIndex + 1, videoCards.length - 1);
+        scrollToIndex(nextIndex);
+      });
+
+      let rafId = null;
+      videoScroll.addEventListener('scroll', () => {
+        if (rafId) {
+          cancelAnimationFrame(rafId);
+        }
+        rafId = requestAnimationFrame(updateActiveVideo);
+      });
+
+      updateActiveVideo();
     };
 
-    const scrollToIndex = (index) => {
-      const target = videoCards[index];
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    const setupVideoAutoplayObserver = () => {
+      const videos = Array.from(document.querySelectorAll('video'));
+      if (!videos.length || !('IntersectionObserver' in window)) {
+        return;
       }
-    };
 
-    row.querySelector('.scroll-button.left').addEventListener('click', () => {
-      const nextIndex = Math.max(activeIndex - 1, 0);
-      scrollToIndex(nextIndex);
-    });
+      const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+        const viewWidth = window.innerWidth || document.documentElement.clientWidth;
+        return rect.bottom > 0 && rect.right > 0 && rect.top < viewHeight && rect.left < viewWidth;
+      };
 
-    row.querySelector('.scroll-button.right').addEventListener('click', () => {
-      const nextIndex = Math.min(activeIndex + 1, videoCards.length - 1);
-      scrollToIndex(nextIndex);
-    });
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+          video.dataset.isVisible = entry.isIntersecting ? 'true' : 'false';
 
-    let rafId = null;
-    videoScroll.addEventListener('scroll', () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
-      rafId = requestAnimationFrame(updateActiveVideo);
-    });
+          if (!entry.isIntersecting) {
+            video.pause();
+            return;
+          }
 
-    updateActiveVideo();
-  };
+          safePlay(video);
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '400px 0px'
+      });
 
-  const setupVideoAutoplayObserver = () => {
-    const videos = Array.from(document.querySelectorAll('video'));
-    if (!videos.length || !('IntersectionObserver' in window)) {
-      return;
-    }
-
-    const isInViewport = (element) => {
-      const rect = element.getBoundingClientRect();
-      const viewHeight = window.innerHeight || document.documentElement.clientHeight;
-      const viewWidth = window.innerWidth || document.documentElement.clientWidth;
-      return rect.bottom > 0 && rect.right > 0 && rect.top < viewHeight && rect.left < viewWidth;
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const video = entry.target;
-        video.dataset.isVisible = entry.isIntersecting ? 'true' : 'false';
-
-        if (!entry.isIntersecting) {
+      videos.forEach((video) => {
+        if (video.classList.contains('scroll-video') || video.classList.contains('inline-video') || video.id === 'dropdown-video') {
+          video.setAttribute('preload', 'auto');
+        } else {
+          video.setAttribute('preload', 'metadata');
+        }
+        video.muted = true;
+        video.defaultMuted = true;
+        video.volume = 0;
+        video.setAttribute('muted', '');
+        video.playsInline = true;
+        if (video.id !== 'dropdown-video') {
+          video.addEventListener('click', () => {
+            video.controls = true;
+          }, { once: true });
+        }
+        if (video.classList.contains('scroll-video') && isInViewport(video)) {
+          video.dataset.isVisible = 'true';
+          safePlay(video);
+        } else {
           video.pause();
-          return;
         }
-
-        safePlay(video);
+        observer.observe(video);
       });
-    }, {
-      threshold: 0.1,
-      rootMargin: '400px 0px'
-    });
-
-    videos.forEach((video) => {
-      if (video.classList.contains('scroll-video') || video.classList.contains('inline-video') || video.id === 'dropdown-video') {
-        video.setAttribute('preload', 'auto');
-      } else {
-        video.setAttribute('preload', 'metadata');
-      }
-      video.muted = true;
-      video.defaultMuted = true;
-      video.volume = 0;
-      video.setAttribute('muted', '');
-      video.playsInline = true;
-      if (video.id !== 'dropdown-video') {
-        video.addEventListener('click', () => {
-          video.controls = true;
-        }, { once: true });
-      }
-      if (video.classList.contains('scroll-video') && isInViewport(video)) {
-        video.dataset.isVisible = 'true';
-        safePlay(video);
-      } else {
-        video.pause();
-      }
-      observer.observe(video);
-    });
-  };
-
-  document.querySelectorAll('[data-scroll-row]').forEach(setupVideoRow);
-
-  const dropdownSelect = document.getElementById('dropdown-video-select');
-  if (dropdownSelect) {
-    const dropdownVideo = document.getElementById('dropdown-video');
-    const dropdownVideoSource = document.getElementById('dropdown-video-source');
-    const dropdownImage = document.getElementById('dropdown-image');
-
-    const updateDropdownMedia = () => {
-      const selectedOption = dropdownSelect.selectedOptions[0];
-      const nextVideo = selectedOption?.getAttribute('data-video');
-      const nextImage = selectedOption?.getAttribute('data-image');
-
-      if (nextVideo && dropdownVideoSource) {
-        dropdownVideoSource.src = nextVideo;
-        if (dropdownVideo) {
-          dropdownVideo.load();
-          safePlay(dropdownVideo);
-        }
-      }
-
-      if (nextImage && dropdownImage) {
-        dropdownImage.src = nextImage;
-      }
     };
 
-    dropdownSelect.addEventListener('change', updateDropdownMedia);
-    updateDropdownMedia();
-  }
+    document.querySelectorAll('[data-scroll-row]').forEach(setupVideoRow);
 
-  setupVideoAutoplayObserver();
-</script>
+    const dropdownSelect = document.getElementById('dropdown-video-select');
+    if (dropdownSelect) {
+      const dropdownVideo = document.getElementById('dropdown-video');
+      const dropdownVideoSource = document.getElementById('dropdown-video-source');
+      const dropdownImage = document.getElementById('dropdown-image');
+
+      const updateDropdownMedia = () => {
+        const selectedOption = dropdownSelect.selectedOptions[0];
+        const nextVideo = selectedOption?.getAttribute('data-video');
+        const nextImage = selectedOption?.getAttribute('data-image');
+
+        if (nextVideo && dropdownVideoSource) {
+          dropdownVideoSource.src = nextVideo;
+          if (dropdownVideo) {
+            dropdownVideo.load();
+            safePlay(dropdownVideo);
+          }
+        }
+
+        if (nextImage && dropdownImage) {
+          dropdownImage.src = nextImage;
+        }
+      };
+
+      dropdownSelect.addEventListener('change', updateDropdownMedia);
+      updateDropdownMedia();
+    }
+
+    setupVideoAutoplayObserver();
+  </script>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-      href="./static/resources/memo.pdf">
-     <i class="fas fa-file-pdf"></i>
-   </a>
-   <a class="icon-link" href="https://github.com/VT-Collab/memo" class="external-link" disabled>
-     <i class="fab fa-github"></i>
-   </a>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/resources/memo.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/VT-Collab/memo" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
